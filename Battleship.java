@@ -7,21 +7,21 @@ public class Battleship {
     locationCells = locs;
   }
 
-  public string checkYourself(String stringGuess){
+  public String checkYourself(String stringGuess){
 
     int guess = Integer.parseInt(stringGuess);
 
     String result = "miss";
 
     for (int cell : locationCells){
-     if (guess.equals(cell)) { //might need to change equal method
+     if (guess ==cell) {
        result = "hit";
        numOfHits++;
        break;
      }
     }
 
-    if (numOfHits.equals(locationCells.length)) {
+    if (numOfHits == locationCells.length) {
       result = "kill";
     }
 
