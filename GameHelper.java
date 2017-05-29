@@ -10,9 +10,9 @@ public class GameHelper {
       inputLine = is.readLine();
       if (inputLine.length() == 0) return null;
     } catch (IOException e) {
-      System.out.pritnln("IOException: " + e);
+      System.out.println("IOException: " + e);
     }
     return inputLine;
-    
+
   }
 }
